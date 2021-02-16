@@ -5,3 +5,193 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: tomato;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------FI Reset----------*/
+.navcontainer{
+    background-color: white;
+    position: fixed;
+    width: 100% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+}
+.navcontainer img{
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+}
+.navmenu{
+    position: relative;
+    left: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.navmenu ul{
+    display: flex;
+    flex-direction: row;
+ 
+}
+.navmenu li{
+    padding-left: 60px;
+    display: none;
+    
+}
+.hamburgermenu{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background: grey;
+}
+/*-------------Fin Navegacion------------------*/
+header{
+    padding-top: 60px;
+    padding-left: 40px;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #2C303F;
+}
+P{
+    color: #5b5e6d;
+    font-size: 30px;
+}
+.header h1{
+    width: 60%;
+    padding-top: 50px;
+}
+.header p{
+    color: #5b5e6d;
+    font-size: 30px;
+    width: 90%;
+}
+/*-------------Botones del header----------------*/
+.buttoncontainer{
+    padding-top: 50px;
+    width: 90%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.emailadress{
+    font-size: 20px;
+    text-align: justify;
+    color: grey;
+    height: 80px;
+    border-radius: 8px;
+    border-color: #F4F3F4;
+}
+.getstarted{
+    font-size: 20px;
+    color: white;
+    background-color: #192592;
+    height: 80px;
+    border-radius: 8px; 
+}
+/*-----------------Fin botones----------------*/
+.contenedortexto{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contenedortexto a{
+    padding-left: 10px;
+}
+.imggrande{
+    padding-top: 40px;
+    width: 90%;
+}
+/*-----------------Aqui ya terminaria el header-----------*/
+main{
+    background-color: #F4F3F4;
+    padding-top: 60px;
+    padding-left: 40px;
+    
+}
+
+.contenedormain h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.contenedormain p{
+    width: 80%;
+    padding-top: 30px;
+    padding-left: 60px;
+    display: flex;
+    text-align: center;
+        
+}
+
+
+
+
+
+
+
+
+/*-------------------per a pantalles de mes de 600 px------------*/
+@media (min-width: 768px) {
+    body {
+      background: green;
+    }
+  }
